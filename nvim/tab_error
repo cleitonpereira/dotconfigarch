@@ -1,0 +1,3 @@
+i  <Tab>       * coc#pum#visible() ? coc#_select_confirm() : coc#expandableOrJumpable() ? "\<C-R>=coc#rpc#request('doKeymap', ['snippets-expand-
+jump',''])\<CR>" : <SNR>128_check_back_space() ? "\<Tab>" : coc#refresh()
+        Definido pela última vez em ~/.local/share/nvim/plugged/coc.nvim/autoload/coc/ui.vim line 20

@@ -1,0 +1,10 @@
+{
+  "coc-explorer|global": {
+    "clipboard": {
+      "type": "cut",
+      "fullpaths": [
+        "/home/kkureito/.config/coc/coc-settings.json"
+      ]
+    }
+  }
+}
