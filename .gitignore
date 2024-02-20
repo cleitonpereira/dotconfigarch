@@ -3,3 +3,10 @@
 **/gh
 **/yay
 **/htop
+node_modules
+coc
+xfce
+Thunar
+systemd
+gtk-2.0
+gtk-3.0
