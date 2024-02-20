@@ -14,10 +14,9 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
 
     if (has("nvim"))
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim'
-endif
-
+        Plug 'nvim-lua/plenary.nvim'
+        Plug 'nvim-telescope/telescope.nvim'
+    endif
 call plug#end()
 
 " Global Sets """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -78,7 +77,6 @@ map <C-l> <C-w>l
 
 
 " autocmd """""""""""""""""""""""""""""""""""""""""
-"
 function! HighlightWordUnderCursor()
     if getline(".")[col(".")-1] !~# '[[:punct:][:blank:]]'
         exec 'match' 'Search' '/\V\<'.expand('<cword>').'\>/'
@@ -144,6 +142,13 @@ inoremap jk <Esc>
 
 " tq insert : as per key : is not working
 nmap tq :
+inoremap <A-t> :
+
+set clipboard+=unnamedplus
+:inoremap <C-v> <ESC>"+pa
+:vnoremap <C-c> "+y
+:vnoremap <C-d> "+d
+
 
 " COC """"""""""""""""""""""""""""""""""""""""""""
 let g:coc_global_extensions = [ 'coc-snippets', 'coc-explorer' ]
